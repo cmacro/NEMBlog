@@ -5,8 +5,8 @@
   },
   "test": {
     "username": "nemblog",
-    "password": "nemblog",
-    "database": "nemblog",
+    "password": "myweb",
+    "database": "/;p0(IJN1F",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "logging": false

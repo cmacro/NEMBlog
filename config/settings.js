@@ -12,7 +12,7 @@ var settings = {
 	auth_cookie_name: process.env.AUTH_COOKIE_NAME || 'nd_secret',//cookie 名字
 	session_secret: process.env.SESSION_SECRET || 'a743894a0e',//session加密串
 	cookie_secret: process.env.COOKIE_SECRET || 'a743894a0e',//session加密串
-	name: process.env.NAME || '技术前哨',
+	name: process.env.NAME || '蘑菇房',
 	version: process.env.VERSION || '1.0.0',
 	site_url: process.env.SITE_URL || 'http://localhost:3000',
 	keywords: process.env.KEYWORDS || 'php 技术 入门 基础 教程|node.js入门|nodejs入门|ecshop 商城|web|nodejs|nginx|MySQL|Linux|appfog|mongodb|js|javascript|jquery|div|css|网页|设计|布局',
