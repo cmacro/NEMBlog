@@ -15,7 +15,7 @@ var settings = {
 	name: process.env.NAME || '蘑菇房',
 	version: process.env.VERSION || '1.0.0',
 	site_url: process.env.SITE_URL || 'http://localhost:3000',
-	keywords: process.env.KEYWORDS || 'php 技术 入门 基础 教程|node.js入门|nodejs入门|ecshop 商城|web|nodejs|nginx|MySQL|Linux|appfog|mongodb|js|javascript|jquery|div|css|网页|设计|布局',
+	keywords: process.env.KEYWORDS || 'moguf|蘑菇房|c|c++|ARM|51|技术|入门|基础|教程|web|nginx|Linux',
 	description: process.env.DESCRIPTION || '建设中...',
 	
 	smtp :{
@@ -23,8 +23,8 @@ var settings = {
         host: 'smtp.163.com',   //定义用来发送邮件的邮箱服务器，一般是QQ这些的
         port:25,    //定义服务器端口，一般是25   ,如果是使用SSL端口一般为465,或者587
         ssl:false,     //默认不适用SSL，可以省略不写
-        user: 'test@163.com',   //邮箱用户名
-        pass:'123456'   //输入邮箱密码
+        user: 'moguf_notify@163.com',   //邮箱用户名
+        pass:'moguf notify'   //输入邮箱密码
 	}
 
 }
