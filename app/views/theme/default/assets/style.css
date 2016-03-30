@@ -91,6 +91,27 @@ pre {
     font-size: 12px;
     line-height: 1.3em
 }
+.entry blockquote {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #eaeaea;
+    border-left: 4px solid #999999;
+    word-break: break-word;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 30px;
+}
+.entry blockquote:before, .entry blockquote:after {
+    content: "";
+}
+.entry blockquote p:last-child {
+    margin: 0;
+}
+.entry blockquote p {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.7;
+}
 pre.prettyprint {
     border: none;
 }
