@@ -15,7 +15,7 @@ var settings = {
 	name: process.env.NAME || '蘑菇房',
 	version: process.env.VERSION || '1.0.0',
 	site_url: process.env.SITE_URL || 'http://www.moguf.com',
-	keywords: process.env.KEYWORDS || 'moguf|蘑菇房|c|c++|ARM|51|技术|入门|基础|教程|web|nginx|Linux',
+	keywords: process.env.KEYWORDS || 'moguf|蘑菇房|c|c++|ARM|嵌入式',
 	description: process.env.DESCRIPTION || '建设中...',
 	
 	smtp :{
