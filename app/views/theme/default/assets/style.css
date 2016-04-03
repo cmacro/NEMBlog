@@ -91,27 +91,31 @@ pre {
     font-size: 12px;
     line-height: 1.3em
 }
+
 .entry blockquote {
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background-color: #eaeaea;
-    border-left: 4px solid #999999;
-    word-break: break-word;
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 30px;
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+  background-color: #eaeaea;
+  &:after {   
+      content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+      whitewhite-space: pre;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: @font-size;
+      line-height: @line-height;
+  }
 }
-.entry blockquote:before, .entry blockquote:after {
-    content: "";
+
+.entry blockquote>:first-child {
+  margin-top: 0;
 }
-.entry blockquote p:last-child {
-    margin: 0;
+
+.entry blockquote>:last-child {
+  margin-bottom: 0;
 }
-.entry blockquote p {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.7;
-}
+
 pre.prettyprint {
     border: none;
 }
