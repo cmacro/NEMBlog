@@ -37,7 +37,7 @@ module.exports = {
 					var time = result[i].created || result[i].createdAt;
 					result[i].addtime = moment(new Date(time)).format("YYYY-MM-DD");
 					if(result[i].content.indexOf('<!--more-->') > 0){
-						result[i].content = result[i].content.substring(0, result[i].content.indexOf('<!--more-->')) + '<div class="ReadMore"><a href="/post/' + result[i].id + '">[阅读更多]</a></div>';
+						result[i].content = result[i].content.substring(0, result[i].content.indexOf('<!--more-->')) + '<div class="ReadMore"><a href="/post/' + result[i].slug + '">[阅读更多]</a></div>';
 					}
 				}
 
