@@ -16,7 +16,7 @@ var settings = {
 	version: process.env.VERSION || '1.0.0',
 	site_url: process.env.SITE_URL || 'http://www.moguf.com',
 	keywords: process.env.KEYWORDS || 'moguf|蘑菇房|c|c++|ARM|嵌入式',
-	description: process.env.DESCRIPTION || '建设中...',
+	description: process.env.DESCRIPTION || '记录开发中的一些经验，包括c/c++ object-c ARM。',
 	
 	smtp :{
         use_authentication: true, //如果我们使用QQ等邮箱，这个必须写且为true
