@@ -324,6 +324,29 @@ module.exports = {
 			res.render('theme/' + settings.theme + '/tag', dataObj);
 		});
 	},
+	category: function(req, res, next){
+		models.post.findAll({
+			where: {tags:{$like:'%armsister%'}}
+		}).then(function(result){
+			for(var i = 0; i < result.length; i++){
+				result[i].content = '';
+				var time = result[i].created || result[i].createdAt;
+				result[i].addtime = moment(new Date(time)).format("YYYY-MM-DD");
+			}
+
+			var dataObj = {
+				site_url:settings.site_url,
+				name: settings.name, 
+				title: settings.name,
+				keywords: settings.keywords,
+				description: settings.description, 
+				posts: result, 
+				tag_name: '拥抱ARM妹子'
+			};
+
+			res.render('theme/' + settings.theme + '/tag', dataObj);
+		});
+	},
 	nav: function(req, res, next){
 		models.nav_cat.findAll({
 			where: {status:1}
