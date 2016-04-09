@@ -116,6 +116,21 @@ pre {
   margin-bottom: 0;
 }
 
+.entry kbd {
+    background-color:#ffffff;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#666666;
+    font-family:Arial;
+    font-size:10px;
+    font-weight:bold;
+    padding:1px 2px;
+    text-decoration:none;
+}
+
 pre.prettyprint {
     border: none;
 }
@@ -315,9 +330,10 @@ pre code {
     display: block;
     margin: 1em 0;
     padding: 0;
-    height: 1px;
-    border: 0 none #ccc;
-    border-top: 1px solid
+    height: 0.2em;
+    border: 0 none #f0f0f0;
+    border-top: 1px solid;
+    color: #f0f0f0;
 }
 .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4 {
     font-weight: bold
