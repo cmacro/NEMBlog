@@ -1,7 +1,7 @@
 {
   "test": {
     "username": "nemblog",
-    "password": null,
+    "password": "nemblog_moguf",
     "database": "nemblog",
     "host": "127.0.0.1",
     "dialect": "mysql",
