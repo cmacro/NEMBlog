@@ -24,7 +24,7 @@ var settings = {
         port:25,    //定义服务器端口，一般是25   ,如果是使用SSL端口一般为465,或者587
         ssl:false,     //默认不适用SSL，可以省略不写
         user: 'moguf_notify@163.com',   //邮箱用户名
-        pass:'moguf*1+1=9'   //输入邮箱密码
+        pass:'moguf'   //输入邮箱密码
 	}
 
 }
