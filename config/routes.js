@@ -17,7 +17,8 @@ module.exports = function(app){
   app.post('/comment', controllers.home.comment);
   app.get('/tag/:tag', controllers.home.tag);
   app.get('/nav', controllers.home.nav);
-  app.get('/armsister', controllers.home.category);
+  app.get('/armsister', controllers.home.armsister);
+  app.get('/category/:category', controllers.home.category);
  // http://www.moguf.com/post/armsister0101
 
   /*

@@ -360,8 +360,30 @@ module.exports = {
 			res.render('theme/' + settings.theme + '/tag', dataObj);
 		});
 	},
-
 	category: function(req, res, next){
+		models.post.findAll({
+			where: {tags:{$like:'%'+req.params.category+'%'},status:1}
+		}).then(function(result){
+			for(var i = 0; i < result.length; i++){
+				result[i].content = '';
+				var time = result[i].created || result[i].createdAt;
+				result[i].addtime = moment(new Date(time)).format("YYYY-MM-DD");
+			}
+
+			var dataObj = {
+				site_url:settings.site_url,
+				name: settings.name, 
+				title: settings.name,
+				keywords: settings.keywords,
+				description: settings.description, 
+				posts: result, 
+				tag_name: req.params.category
+			};
+
+			res.render('theme/' + settings.theme + '/tag', dataObj);
+		});
+	},
+	armsister: function(req, res, next){
 		models.post.findAll({
 			where: {tags:{$like:'%armsister%'}}
 		}).then(function(result){
@@ -383,7 +405,8 @@ module.exports = {
 
 			res.render('theme/' + settings.theme + '/tag', dataObj);
 		});
-	},	nav: function(req, res, next){
+	},	
+	nav: function(req, res, next){
 		models.nav_cat.findAll({
 			where: {status:1}
 		}).then(function(cat_list){
