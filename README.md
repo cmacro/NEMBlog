@@ -22,6 +22,9 @@ install pm2
 
 `# npm pm2 install`
 
+
+start blog
+
 `# pm2 index.js`
 
 
