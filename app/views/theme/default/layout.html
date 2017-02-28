@@ -21,7 +21,7 @@
       <div class="container"><a id="logo" href="<%=site_url%>" title="<%=name%>"><%=name%></a>
         <nav>
           <ul>
-              <li><a href="<%=site_url%>/page/about" title="关于我">关于我</a></li>
+              
               <li><a href="<%=site_url%>/archives" title="文章存档">文章存档</a></li>
           </ul>
         </nav>
@@ -30,8 +30,9 @@
     <%- body %>
     <footer id="main-footer">
     <div class="container">
-      <p>我的：
-	      <a href="http://gleam.cnblogs.com" target="_blank">博客园</a>
+      <p>
+        <a href="<%=site_url%>/page/about" title="关于我">关于我</a>
+	    | <a href="http://gleam.cnblogs.com" target="_blank">博客园</a>
 	    | <a href="https://github.com/cmacro" target="_blank">github</a>
       | <a href="<%=site_url%>/sitemap.html" target="_blank" title="网站地图">网站地图</a> 
 		  | <a href="<%=site_url%>/sitemap.xml" target="_blank" title="sitemap">sitemap</a> 
