@@ -16,6 +16,18 @@ next edit file config/db.json and update your database password
 `node index.js`
 when you see `listening on port 3000` that is ok
 
+## pm2 start
+
+install pm2
+
+`# npm pm2 install`
+
+
+start blog
+
+`# pm2 index.js`
+
+
 #Init Admin Acount
 open http://localhost:3000/admin/install
 
