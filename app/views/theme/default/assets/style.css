@@ -305,16 +305,20 @@ pre code {
     padding: 0 2px;
 }
 .post .entry h2, .post .entry h3 {
-    margin-bottom: 10px;
-    padding: 4px 0;
+    margin-bottom: 5px;
+    padding: 2px 0;
     border-bottom: 1px dashed #ccc;
-    line-height: 2.2em;
+    line-height: 1.5em;
 }
 .post .entry h2 {
-    font-size: 18px
+    font-size: 17px;
+    color: #ffffff;
+    background: #0099cc;
+    // margin-left: 20px;
+    padding-left: 10px;
 }
 .post .entry h3 {
-    font-size: 16px;
+    font-size: 15px;
 }
 .post .entry ul, .post .entry ol {
     margin-bottom: 1em;
