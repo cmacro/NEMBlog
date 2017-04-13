@@ -2,7 +2,7 @@
 Node.js + Express.js + Mysql
 
 
-#Install
+## Install
   
   `npm install`
 
@@ -10,7 +10,7 @@ next install mysql and create database nemblog
 
 next edit file config/db.json and update your database password
 
-#Start Server
+## Start Server
 
 `cd [your server root]`
 
@@ -23,14 +23,14 @@ when you see `listening on port 3000` that is ok
 pm2 start index.js
 ```
 
-#Init Admin Acount
+## Init Admin Acount
 open http://localhost:3000/admin/install
 
 just input username and password (like test/123456)
 
-#Login 
+## Login 
 input your username and password 
 
-#Write One Article
+## Write One Article
 after this you can open http://localhost:3000
 
