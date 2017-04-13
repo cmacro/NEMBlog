@@ -11,10 +11,17 @@ next install mysql and create database nemblog
 next edit file config/db.json and update your database password
 
 #Start Server
+
 `cd [your server root]`
 
 `node index.js`
 when you see `listening on port 3000` that is ok
+
+## npm start 
+
+```
+pm2 start index.js
+```
 
 #Init Admin Acount
 open http://localhost:3000/admin/install
